@@ -1,13 +1,8 @@
 version: "3"
-services:
-  os:
-    image: "ubuntu:focal"
-    container_name: "antimainstream53/ubuntucore"
-    ports:
-      - "8080:8080"
+services: 
   db:
     image: "postgres:11"
-    container_name: "myDB"
+    container_name: "DB_1"
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
